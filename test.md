@@ -1,8 +1,7 @@
 # Lol
 This is an article
 ## Subsection
-Subsection contents
-My **cool** list:
+Subsection contents. My **cool** list:
 * point 1
 * another point
 * one more point
