@@ -26,7 +26,7 @@ Often, while almost everyone in the organization aggrees that "automation is goo
 * People are obliged to perform periodical, formal reporting. For example, time reporting, where each day (week, month) same form is submitted with the same values (just filling some table with bunch of '8h').
 
 ### Meetings must either have small audience or be moderated
-Non-moderated meeting with 5+ people is likely to be non-productive. With 10+ people it’s almost inevitable. These numbers are just empirical observations. There is no formal theory behind them.
+Meetings with more than 10 people must have a moderator. There is no formal theory behind this number, it is just an empirical observation.
 #### Problem description
 Large non-moderated meeting may indicate that problem was not decomposed enough, that organiser of the meeting is not aware about the roles and expertise distribution, or that architecture of organization is not effective, with lot of entagled departments and authority-expertise disbalance. Symptoms:
 * Some or even majority of people keep doing non-meeting activities (such as checking emails). This simply means that these people are not required on this meeting, no matter their titles or roles.
@@ -34,21 +34,28 @@ Large non-moderated meeting may indicate that problem was not decomposed enough,
 * No cocrete decision is made, except the one that one more meeting is required (or even series).
 * As it turns afterwards, some people had important pieces of information but didn't share them during the meeting because they didn't have a chance to speak.
 
-### Only actually working processes
+### Non-working processes must be removed or updated, not ignored
 If the process is unrealistic and clunky, it must be reviewed and changed asap, instead of ignoring the fact that everyone is working around this process. If the process in its current form is considered essential (for example, it’s related to security), then enforcing mechanisms should be introduced. One way or another, there must not be the case that process exists, but people are not working by it.
 #### Problem description
 If company doesn't have actually functional feedback loops, it will tend to produce a lot of processes that are not realistic or usable. This often happens when company hires some consultant in order to "setup the process". Or when some framework is adopted by higher management without adapting it to this specific organisation. Or one department is producing processes for other departments. This means that people, who create the process, are not the ones that would be affected by it. Symptoms:
 * Nothing is done by the process and everyone knows it. 
 * If process is documented, no one really reads it. It is perceived as something either obsolete or from parallel reality.
-* Artifacts, that process supposed to produce, are created only before an audit or assesment. 
+* Artifacts, that process supposed to produce, are created only before an audit or assesment.
+* People are punished for criticizing the process. Process stays unchanged anyway.
 
-### Removing, not just adding
-Often much more can be achieved by removing a process, role, implementation, specification, then by adding a new one. Therefore there should be a continuous (rather than stop-the-world) process of refactoring of the technical systems and organization itself. People tend to avoid removing things because they don’t feel they have an authority to do so. Also, removing something requires a detailed analysis of the context while adding something seems more comfortable and safer. 
+### Obsolete information must be removed
+Often much more can be achieved by removing a process, implementation, specification, then by adding a new one. Therefore there should be a continuous (rather than stop-the-world) process of refactoring of the technical systems and organization itself.
+#### Problem description
+People tend to avoid removing things because they don’t feel they have an authority to do so. Also, removing something requires a detailed analysis of the context while adding something seems more comfortable and safer. Symptoms of the problem:
+* There is redundancy in the documentation, with inevitable contradictions. Each time when behaviour of the documented system must be updated, whole new set of artifacts (static documents, wiki pages) is created instead of editing a existing ones.
+* Source code contains multiply implementations of the same or very similar function. Developers don't feel the ownership of the whole code base and keep inventing the wheel in their small area instead. 
+* Process is overloaded with multiple mandatory steps and artifacts because each time, when gap was found, it was mitigated by an additional step instead of reviewing the process as a whole.
 
-### Avoiding redundant information
-Information must be referenced, not copy-pasted. In the case of documentation, this means that it should be created as hypertext, not text. In the case of communication, this means that proxy-mailing and similar practices must be avoided.
+### Information must be referenced, not copy-pasted
+In the case of documentation, this means that it should be created as hypertext, not text. In the case of communication, this means that proxy-mailing and similar practices must be avoided. 
 
-### Reusing external knowledge
-Establishing internal mentorship and knowledge sharing is a good thing, but it’s important not to forget that there is a whole world out there. There is no need to re-invent internal best coding practices or project management essentials course. There is enough high-quality public information on that topic.
+### External knowledge must be reused
+Establishing internal mentorship and knowledge sharing is a good thing, but it’s important not to forget that there is a whole world out there. There is no need to re-invent internal best coding practices or project management essentials course. There is enough high-quality public information on that topic. 
 
-### Calendar instead of TODO list
+### Calendar should be used instead of pesonal TODO list
+Each time when new task is received, don't put it into a TODO list. Create a calendar entry instead. Such practice allows to quickly develop the estimation skill - it will be immeditely visible if task took more time than was planned. In such case future tasks are shifted. Also it allows to see, how many hours (days, weeks) are already filled with tasks. Tasks can be reestimated and shifted. But if there is a planned task, it always must have a designated time slot for it.
