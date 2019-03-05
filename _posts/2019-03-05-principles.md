@@ -10,10 +10,10 @@ comments: false
 This page contains the list of principles that I'm using in my daily work. None of these principles is original. For each of them, there is a bunch of technical or business-literature where they can be found. However, literature with opposite or almost opposite rules can be found as well. Therefore, the point of this page is not to teach or inspire. Instead, this page can be considered as a manifest that informs the reader, which types of decisions I will make in the actual working environment. Target audience, therefore, is my actual or potential colleagues.
 
 # Principles list
-### Calendar should be used instead of personal TODO list
+## Calendar should be used instead of personal TODO list
 Each time when a new task is received, don't put it into a TODO list. Create a calendar entry instead. Such practice allows to develop the estimation skill quickly - it will be immediately visible if the task took more time than was planned. In such a case, scheduled tasks are shifted. Also, it allows to see, how many hours (days, weeks) are already filled with tasks. Tasks can be re-estimated and shifted. However, if there is a planned task, it always must have a designated time slot for it.
 
-#### Periodical meetings must be replaced by continuous information flow
+## Periodical meetings must be replaced by continuous information flow
 Any periodical meeting (such as sync-up, standup, demo, grooming) is a workaround that mitigates the lack of proper communication channels in the organization. It can and should be replaced by a continuous flow of information, automatic documentation and ad-hoc meetings with concrete agenda.
 #### Problem description
 Periodical meetings are one of the most favorite tools of the incompetent managers. They create an illusion of awareness and control, fill the working time and allow to avoid digging into the problems, replacing it by "status updates." They have a non-concrete agenda and quickly evolve into rituals. Symptoms of the problem include the following:
@@ -23,7 +23,7 @@ Periodical meetings are one of the most favorite tools of the incompetent manage
 * "Let's discuss it's on tomorrow sync-up." People are holding important information and avoid the discussions until the next meeting occurrence, instead of just sharing the information or setting up the discussion as soon as possible.
 * "No updates or questions from my side." 
 
-### Documentation must be used as a primary source of knowledge
+## Documentation must be used as a primary source of knowledge
 Knowledge must be shared via documentation. Emails, IM, comments, meetings are for active discussions at the stage when decision or expertise regarding the specific topic is still emerging (i.e., for expert-to-expert communication). Once knowledge is acquired, it must be communicated to consumers via persistent documentation. Documentation can be further commented, discussed and changed, but the main point is that it can be easily referenced and shared.
 #### Problem description
 While there are one-time decisions, a vast majority of information, that is generated in the organization, is used more than one time and by multiple people. If there is no established documentation culture, the following symptoms will be observed:
@@ -32,7 +32,7 @@ While there are one-time decisions, a vast majority of information, that is gene
 * "No, this is not what I said." Agreements and commitments are periodically broken, but no one is sure that such an agreement had the place.
 * "I don't have time for documenting this." People keep repeating the same text or spoken messages instead of placing the same message into the persistent documentation system. Communicating the knowledge takes O(n) instead of O(1) for the source of knowledge, where n is a number of knowledge recipients.
 
-### There should be continuous processes automation
+## There should be continuous processes automation
 Processes automation is an essential activity that must have dedicated resources. Every trivial, repetitive activity that is done by humans is a waste of organization resources. Such type of activity is especially ironical in software development companies.
 #### Problem description
 Often, while almost everyone in the organization agrees that "automation is good," there are no actual measures regarding this. Assigning developer or two to the process automation tasks seems to be a waste of resources, especially when deadlines are approaching (and they always are). In the case of outsourcing companies, the time of such developers can't be sold to a customer. Instead, the company hires more line managers or assistants to do a trivial job. Even if some automation attempts are made, they often quite clunky and demand the machine-like behavior from the humans ("this form must be filled exactly using this format for our script to work") instead of liberating them from the mechanical tasks and rigid interfaces by introducing some minimal machine learning. Symptoms:
@@ -40,6 +40,8 @@ Often, while almost everyone in the organization agrees that "automation is good
 * Operations that are atomic from the organizational point of view are technically non-atomic and require the fixed set of actions to be performed by a human each time when such operation is made. For example, passing the ticket with requirements to the development teams requires filling the same three (or five, or fifteen) fields with the same values each time.
 * People are obliged to submit periodical, formal reports. For example, time reporting, where each day (week, month) same form is submitted with the same values (just filling some table with a bunch of '8h').
 
+## Redundancy must be avoided
+This is a meta-principle that is further broken down below.
 ### Meetings must either have a small audience or be moderated
 Meetings with more than ten people must have a moderator. There is no formal theory behind this number. It is just an empirical observation.
 #### Problem description
