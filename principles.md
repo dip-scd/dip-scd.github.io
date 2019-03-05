@@ -17,7 +17,7 @@ While there are one-time decisions, vast majority of information, that is genera
 * "No, this is not what I said". Agreements and commitments are periodically broken but no one is really sure that such agreement had place.
 * "I don't have time for documenting this". People keep repeating the same text or spoken messages istead of placing exactly the same message into the persistent documentation system. Communicating the knowledge takes O(n) instead of O(1) for the source of knowledge, where n is a number of knowledge recipients.
 
-### Continuous processes automation
+### There should be continuous processes automation
 Processes automation is an essential activity that must have dedicated resources. Every trivial, repetitive activity, that is done by humans is a waste of organization resources. Such type of activity is especially ironical in software development companies.
 #### Problem description
 Often, while almost everyone in the organization aggrees that "automation is good", there are no actual measures regarding this. Assigning developer or two to the process automation tasks seems to be a waste of resources, especially when deadlines are approaching (and they always are). Or, in case of outsorcing companies, time of such developers can't be sold to a customer. Instead, company hires more line managers or assistants to do the trivial job. And even if some automation attempts are made, they are quite clunky and demand the machine-like behaviour from the humans ("this form must be filled exactly using this format in order for our script to work") instead of liberating them from the mechanical tasks and rigid interfaces by introducing some minimal machine learning. Symptoms:
@@ -27,9 +27,20 @@ Often, while almost everyone in the organization aggrees that "automation is goo
 
 ### Meetings must either have small audience or be moderated
 Non-moderated meeting with 5+ people is likely to be non-productive. With 10+ people it’s almost inevitable. These numbers are just empirical observations. There is no formal theory behind them.
+#### Problem description
+Large non-moderated meeting may indicate that problem was not decomposed enough, that organiser of the meeting is not aware about the roles and expertise distribution, or that architecture of organization is not effective, with lot of entagled departments and authority-expertise disbalance. Symptoms:
+* Some or even majority of people keep doing non-meeting activities (such as checking emails). This simply means that these people are not required on this meeting, no matter their titles or roles.
+* Audience is split into two or more groups, trying to discuss different topics simultaneously.
+* No cocrete decision is made, except the one that one more meeting is required (or even series).
+* As it turns afterwards, some people had important pieces of information but didn't share them during the meeting because they didn't have a chance to speak.
 
 ### Only actually working processes
 If the process is unrealistic and clunky, it must be reviewed and changed asap, instead of ignoring the fact that everyone is working around this process. If the process in its current form is considered essential (for example, it’s related to security), then enforcing mechanisms should be introduced. One way or another, there must not be the case that process exists, but people are not working by it.
+#### Problem description
+If company doesn't have actually functional feedback loops, it will tend to produce a lot of processes that are not realistic or usable. This often happens when company hires some consultant in order to "setup the process". Or when some framework is adopted by higher management without adapting it to this specific organisation. Or one department is producing processes for other departments. This means that people, who create the process, are not the ones that would be affected by it. Symptoms:
+* Nothing is done by the process and everyone knows it. 
+* If process is documented, no one really reads it. It is perceived as something either obsolete or from parallel reality.
+* Artifacts, that process supposed to produce, are created only before an audit or assesment. 
 
 ### Removing, not just adding
 Often much more can be achieved by removing a process, role, implementation, specification, then by adding a new one. Therefore there should be a continuous (rather than stop-the-world) process of refactoring of the technical systems and organization itself. People tend to avoid removing things because they don’t feel they have an authority to do so. Also, removing something requires a detailed analysis of the context while adding something seems more comfortable and safer. 
