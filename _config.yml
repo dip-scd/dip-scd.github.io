@@ -19,10 +19,10 @@ rtl: false
 owner:
   name:           whitepaper
   avatar:         "https://avatars1.githubusercontent.com/u/1814590?s=400&u=cdd0d96413a16f38ddbd1901e6ca8b80900e3d8c&v=4"
-  email:          "oleg.trafimovich@gmail.com"
+  email:          
   # Social networking links used in footer. Update and remove as you like.
   twitter: 
-  github: https://github.com/dip-scd
+  github:
   stackexchange: 
   linkedin: https://linkedin.com/in/oleg-trafimovich-04a32112/
   # For Google Authorship https://plus.google.com/authorship

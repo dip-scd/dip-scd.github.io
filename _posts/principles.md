@@ -1,3 +1,13 @@
+
+---
+layout: post
+title: "Principles"
+description: "List of personal working principles learned hard way"
+category: articles
+tags: [processes, documentation]
+comments: false
+---
+
 ### Calendar should be used instead of personal TODO list
 Each time when a new task is received, don't put it into a TODO list. Create a calendar entry instead. Such practice allows to develop the estimation skill quickly - it will be immediately visible if the task took more time than was planned. In such a case, scheduled tasks are shifted. Also, it allows to see, how many hours (days, weeks) are already filled with tasks. Tasks can be re-estimated and shifted. However, if there is a planned task, it always must have a designated time slot for it.
 
