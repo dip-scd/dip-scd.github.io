@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "Principles"
-description: "List of personal working principles learned hard way"
-category: articles
-tags: [processes, documentation]
-comments: false
+date: 2019-03-05
+categories:
 ---
+
 This page contains the list of principles that I'm using in my daily work. None of these principles is original. For each of them, there is a bunch of technical or business-literature where they can be found. However, literature with opposite or almost opposite rules can be found as well. Therefore, the point of this page is not to teach or inspire. Instead, this page can be considered as a manifest that informs the reader, which types of decisions I will make in the actual working environment. Target audience, therefore, is my actual or potential colleagues.
 
 # Principles list

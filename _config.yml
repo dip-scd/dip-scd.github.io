@@ -1,35 +1,16 @@
-name: dip scd
-description: >
-    
-about: >
-    
-master_repo: false
-url: "https://dip-scd.github.io/"
-markdown: kramdown
-highlighter: rouge
+# Site settings
+title: dip scd
+email: 
+description: > # this means to ignore newlines until "baseurl:"
+  
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "https://dip-scd.github.io" # the base hostname & protocol for your site
+twitter_username: 
+github_username: 
 
-plugins: ['jekyll-paginate', 'jekyll-gist', 'jekyll-feed']
+# Build settings
+markdown: redcarpet
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
-paginate: 4
-
-logo:             logo.png
-disqus_shortname:
-
-rtl: false
-owner:
-  name:           whitepaper
-  avatar:         "https://avatars1.githubusercontent.com/u/1814590?s=400&u=cdd0d96413a16f38ddbd1901e6ca8b80900e3d8c&v=4"
-  email:          
-  # Social networking links used in footer. Update and remove as you like.
-  twitter: 
-  github:
-  stackexchange: 
-  linkedin: https://linkedin.com/in/oleg-trafimovich-04a32112/
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+redcarpet:
+  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]

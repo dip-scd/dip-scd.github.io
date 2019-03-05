@@ -1,13 +1,19 @@
-<div class="header-container container">
-  <header>
-    <a href="{{ site.url }}" class="top-link">{{ site.name }}</a>
-      <!-- ul class="nav">
-        <li><a href="{{ site.url }}">Home</a></li>
-        <li><a href="{{ site.url }}/about">About</a></li>
-        {% if site.owner.github %}
-          <li><a href="{{ site.owner.github }}" target="_blank">Projects</a></li>
-        {% endif %}
-        <li><a href="{{ site.url }}/feed.xml">RSS</a></li>
-      </ul-->
-  </header>
+<div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="{{ site.baseurl }}/">Home</a>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </nav>
+
+
 </div>
