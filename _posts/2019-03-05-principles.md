@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Principles"
-date: 
+date: 2019-03-05
 categories:
 ---
 
